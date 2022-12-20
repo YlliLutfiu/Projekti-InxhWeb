@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* body{
+    width: 100vw;
+    height: 100vh;
+} */
+
+header{
+    display: flex;
+}
+
+ul{
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    width: 600px;
+    align-items: center;
+    text-decoration: none;
+}
+
+#home ul{
+    width: 450px;
+}
+
+li{
+    font-size: 20px;
+}
+
+li, h2{
+    margin-top: 20px;
+}
+
+h2{
+    text-align: end;
+    width: 350px;
+    font-size: 40px;
+}
+
+#log li{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+}
+
+li a:hover{
+    text-decoration: underline;
+    text-shadow: 1;
+}
+
+main{
+    background-image: url('/assets/images/holiday.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    background-position: center;
+}
+
+main p{
+    text-align: center;
+    font-size: 80px;
+    font-weight: 900;
+    text-align: left;
+    letter-spacing: -2px;
+}
+
+.packages{
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 650px;
+}
+
+#gift{
+    margin-top: 20px;
+    margin-left: 60px;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+#gift:hover{
+    background-color: white;
+    color: black;
+}
+
+.products{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.products img{
+    width: 235px;
+    height: 255px;
+    border-radius: 20%;
+}
+
+.products h5{
+    margin-top: 10px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.products p{
+    margin-top: 3px;
+    text-align: left;
+    font-size: 13px;
+    font-weight: lighter;
+    color: grey;
+}
+
+.shop{
+    color: black;
+    background-color: white;
+    border: 1px solid rgb(181, 179, 179);
+    font-weight: 500;
+    margin-top: 20px;
+    padding: 3px 30px;
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+.shop:hover{
+    background-color: black;
+    color: white;
+}
+
+/*slider*/
+.slider{
+    margin-top: 50px;
+    margin-left: 100px;
+    width: 800px;
+    height: 500px;
+    /* border-radius: 10px; */
+    overflow: hidden;
+}
+
+#img6, #img7, #img8, #img9{
+    border-radius: 10px;
+}
+
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img{
+    width: 500px;
+    height: 500px;
+}
+
+/*for manual slider*/
+
+.nav-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    margin-left: -150px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 1px solid black;
+    padding: 5px;
+    margin: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    align-items: center;
+}
+
+.manual-btn:hover{
+    background-color: black;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+/*for automatic slider*/
+
+.nav-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+    margin-left: -150px;
+}
+
+.nav-auto div{
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+    margin: 8px;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1{
+    background-color: black;
+}
+
+#radio2:checked ~ .nav-auto .auto-btn2{
+    background-color: black;
+}
+
+#radio3:checked ~ .nav-auto .auto-btn3{
+    background-color: black;
+}
+
+#radio4:checked ~ .nav-auto .auto-btn4{
+    background-color: black;
+}
+
+.second-container{
+    display: flex;
+    margin-top: 20px;
+}
+
+.heart{
+    margin-right: 80px;
+    margin-top: 80px;
+    text-align: left;
+    margin-left: 0;
+    align-content: left;
+}
+
+.heart h1{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.heart p{
+    font-size: 23px;
+    line-height: 1.7;
+}
+
+footer{
+    background-color: rgb(225, 239, 253);
+}
+
+.shopf :first-child{
+    font-weight: bold;
+    margin-left: 80px;
+    margin-bottom: 50px;
+    margin-top: 60px;
+}
