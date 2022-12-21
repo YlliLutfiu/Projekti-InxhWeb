@@ -158,14 +158,16 @@ main p{
 .slider{
     margin-top: 50px;
     margin-left: 100px;
-    width: 800px;
+    width: 32%;
     height: 500px;
     /* border-radius: 10px; */
     overflow: hidden;
 }
 
+
 #img6, #img7, #img8, #img9{
     border-radius: 10px;
+    width: 100%;
 }
 
 .slides{
@@ -266,8 +268,10 @@ main p{
 
 .second-container{
     display: flex;
+    justify-content: center;
     margin-top: 20px;
     margin-bottom: 100px;
+    gap: 220px;
 }
 
 .heart{
@@ -393,9 +397,18 @@ hr{
     box-shadow: 10px 10px 30px rgb(223, 220, 220);
 }
 
+.whitening-pic{
+    width: 50%;
+    height: 400px;
+}
+
 .whitening-pic img{
-    width: 558px;
-    height: 380px;
+    width: 100%;
+    height: 100%;
+}
+
+.whitening{
+    width: 50%;
 }
 
 
