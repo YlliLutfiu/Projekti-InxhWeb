@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    height: 70px;
+    align-items: center;
+}
+
+nav ul{
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    width: 600px;
+    align-items: center;
+    text-decoration: none;
+}
+
+#bite{
+    text-decoration: none;
+    color: black;
+}
+
+#home ul{
+    width: 450px;
+}
+
+nav li{
+    font-size: 20px;
+}
+
+nav li, nav h2{
+    margin-top: 20px;
+}
+
+h2{
+    text-align: end;
+    width: 350px;
+    font-size: 40px;
+}
+
+#log li{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav li a{
+    text-decoration: none;
+    color: black;
+}
+
+nav li a:hover{
+    text-decoration: underline;
+    text-shadow: 1;
+}
+
+main{
+    width: 100%;
+    height: 600px;
+    object-position: center bottom;
+    background-image: url('/assets/images/vita.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-text{
+    height: 350px;
+    width: 800px;
+    text-align: center;
+    padding-top: 250px;
+}
+
+.main-text h1{
+    font-size: 4.2105263158rem;
+    color: white;
+    font-weight: 600
+}
+
+.main-text p{
+    margin: 35px;
+    letter-spacing: -.04em;
+    font-size: 1.5789473684rem;
+    font-weight: 300;
+}
+
+.vegan{
+    margin: 80px 400px;
+}
+
+.vegan p{
+    font-size: 30px;
+    text-align: center;
+    color: rgb(101, 94, 94);
+}
+
+/*ingredients*/
+
+section{
+    margin: 0 180px;
+}
+
+.first-ing, .second-ing, .third-ing{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.first-ing img{
+    width: 180px;
+}
+
+.second-ing img{
+    width: 140px;
+}
+
+.third-ing #img-gg{
+    width: 130px;
+}
+
+.third-ing p{
+    margin-right: 20px;
+}
+
+.third-ing #img-nh{
+    width: 190px;
+}
+
+.third-ing{
+    margin: 10px 150px;
+}
+
+.list{
+    display: flex;
+    width: 100%;
+    margin-left: 30px;
+}
+
+.list h4, .list p{
+    text-align: left;
+}
+
+.list h4{
+    font-size: 22px;
+}
+
+.list p{
+    font-size: 18px;
+    letter-spacing: -.03em;
+    line-height: 1.6;
+    color: rgb(65, 65, 65);
+}
+
+.earth{
+    display: flex;
+    width: 80%;
+    height: 100%;
+    margin: 80px 150px;
+}
+
+.earth img{
+    width: 650px;
+    height: 480px;
+    margin-left: 20px;
+}
+
+.defense h1{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.earth h1{
+    font-size: 45px;
+    margin-top: 30px;
+}
+
+.earth p{
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+hr{
+    width: 90%;
+    margin-left: 80px;
+}
+
+.smiles{
+    display: flex;
+    margin: 100px 150px;
+}
+
+.smiles-pic img{
+    width: 650px;
+    height: 480px;
+}
+
+.smiles-txt{
+    text-align: left;
+    margin-left: 20px;
+}
+
+.smiles h1{
+    font-size: 45px;
+    margin-top: 30px;
+}
+
+.smiles p{
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/*footer*/
+
+footer{
+    background-color: ghostwhite;
+    padding: 70px 0;
+}
+
+.footer-container{
+    width: 1100px;
+    height: 300px;
+    margin: auto;
+}
+
+.footer-col ul{
+    list-style: none;
+    text-decoration: none;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+} 
+
+footer li a{
+    text-decoration: none;
+    color: black;
+}
+
+.footer-col{
+    width: 20%;
+    padding: 0 15px;
+}
+
+footer h3{
+    padding-bottom: 40px;
+    font-size: 20px;
+}
+
+.footer-col .socials a{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    color: black;
+    padding: 0;
+}
+
+.footer-col ul li a{
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.footer-col ul li a:hover{
+    padding-left: 10px;
+}
+
+hr{
+    width: 80%;
+    margin-left: 150px;
+    color: rgb(239, 236, 236);
+}
+
+#hr1{
+    margin-bottom: 25px;
+}
+
+.privacy{
+    display: flex;
+}
+
+.rights{
+    margin-left: 180px;
+}
+
+.email{
+    margin-left: 750px;
+}
+
+.footer-col img{
+    width: 60px;
+    padding-right: 20px;
+}
+
+.fo-pic{
+    width: 300px;
+    margin-left: 350px;
+}
+
+.location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.location-txt{
+    text-align: center;
+    font-size: 30px;
+    width: 400px;
+}
+
+
+
+

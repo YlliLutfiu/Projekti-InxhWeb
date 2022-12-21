@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* body{
@@ -13,7 +16,8 @@ header{
     position: sticky;
     top: 0;
     background-color: white;
-    padding-bottom: 7px;
+    height: 70px;
+    align-items: center;
 }
 
 nav ul{
@@ -45,6 +49,11 @@ h2{
     font-size: 40px;
 }
 
+#bite{
+    text-decoration: none;
+    color: black;
+}
+
 #log li{
     width: 100%;
     display: flex;
@@ -73,7 +82,7 @@ main{
 main p{
     padding-top: 80px;
     text-align: center;
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 900;
     text-align: left;
     letter-spacing: -2px;
@@ -158,6 +167,7 @@ main p{
 .slider{
     margin-top: 50px;
     margin-left: 100px;
+    width: 32%;
     width: 32%;
     height: 500px;
     /* border-radius: 10px; */
@@ -403,14 +413,13 @@ hr{
 }
 
 .whitening-pic img{
-    width: 100%;
+    width: 558px;
     height: 100%;
 }
 
-.whitening{
-    width: 50%;
+.whitening-pic{
+    height: 400px;
 }
-
 
 .whitening h4, .whitening p{
     text-align: center;
@@ -418,14 +427,14 @@ hr{
 }
 
 .whitening h4{
-    font-size: 48px;
+    font-size: 35px;
     margin-bottom: 5px;
     font-weight:900;
 }
 
 .whitening p{
     margin-top: 0;
-    font-size: 20px;
+    font-size: 16px;
     color: gray;
 }
 
