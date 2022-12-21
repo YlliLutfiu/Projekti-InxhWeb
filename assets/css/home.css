@@ -168,10 +168,12 @@ main p{
     margin-top: 50px;
     margin-left: 100px;
     width: 32%;
+    width: 32%;
     height: 500px;
     /* border-radius: 10px; */
     overflow: hidden;
 }
+
 
 #img6, #img7, #img8, #img9{
     border-radius: 10px;
@@ -276,6 +278,7 @@ main p{
 
 .second-container{
     display: flex;
+    justify-content: center;
     margin-top: 20px;
     margin-bottom: 100px;
     gap: 220px;
@@ -402,6 +405,11 @@ hr{
     margin: 0 200px;
     border: 1px solid whitesmoke;
     box-shadow: 10px 10px 30px rgb(223, 220, 220);
+}
+
+.whitening-pic{
+    width: 50%;
+    height: 400px;
 }
 
 .whitening-pic img{
