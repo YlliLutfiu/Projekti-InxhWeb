@@ -10,9 +10,13 @@
 
 header{
     display: flex;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding-bottom: 7px;
 }
 
-ul{
+nav ul{
     list-style: none;
     width: 100%;
     height: 100%;
@@ -27,11 +31,11 @@ ul{
     width: 450px;
 }
 
-li{
+nav li{
     font-size: 20px;
 }
 
-li, h2{
+nav li, h2{
     margin-top: 20px;
 }
 
@@ -47,12 +51,12 @@ h2{
     justify-content: flex-end;
 }
 
-li a{
+nav li a{
     text-decoration: none;
     color: black;
 }
 
-li a:hover{
+nav li a:hover{
     text-decoration: underline;
     text-shadow: 1;
 }
@@ -63,9 +67,11 @@ main{
     background-size: cover;
     height: 700px;
     background-position: center;
+    margin-bottom: 50px;
 }
 
 main p{
+    padding-top: 80px;
     text-align: center;
     font-size: 80px;
     font-weight: 900;
@@ -73,14 +79,17 @@ main p{
     letter-spacing: -2px;
 }
 
+.container{
+    margin-bottom: 50px;
+}
+
 .packages{
-    margin-top: 50px;
     margin-left: 50px;
     width: 650px;
 }
 
 #gift{
-    margin-top: 20px;
+    margin-top: 40px;
     margin-left: 60px;
     background-color: black;
     color: white;
@@ -258,6 +267,7 @@ main p{
 .second-container{
     display: flex;
     margin-top: 20px;
+    margin-bottom: 100px;
 }
 
 .heart{
@@ -287,4 +297,131 @@ footer{
     margin-left: 80px;
     margin-bottom: 50px;
     margin-top: 60px;
+}
+
+/*footer*/
+
+footer{
+    background-color: ghostwhite;
+    padding: 70px 0;
+}
+
+.footer-container{
+    width: 1100px;
+    height: 300px;
+    margin: auto;
+}
+
+.footer-col ul{
+    list-style: none;
+    text-decoration: none;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+} 
+
+footer li a{
+    text-decoration: none;
+    color: black;
+}
+
+.footer-col{
+    width: 20%;
+    padding: 0 15px;
+}
+
+footer h3{
+    padding-bottom: 40px;
+    font-size: 20px;
+}
+
+.footer-col .socials a{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    color: black;
+    padding: 0;
+}
+
+.footer-col ul li a{
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.footer-col ul li a:hover{
+    padding-left: 10px;
+}
+
+hr{
+    width: 80%;
+    margin-left: 150px;
+    color: rgb(239, 236, 236);
+}
+
+#hr1{
+    margin-bottom: 25px;
+}
+
+.privacy{
+    display: flex;
+}
+
+.rights{
+    margin-left: 180px;
+}
+
+.email{
+    margin-left: 750px;
+}
+
+.footer-col img{
+    width: 60px;
+    padding-right: 20px;
+}
+
+.fo-pic{
+    width: 300px;
+    margin-left: 350px;
+}
+
+.section{
+    display: flex;
+    margin: 0 200px;
+    border: 1px solid whitesmoke;
+    box-shadow: 10px 10px 30px rgb(223, 220, 220);
+}
+
+.whitening-pic img{
+    width: 558px;
+    height: 380px;
+}
+
+
+.whitening h4, .whitening p{
+    text-align: center;
+    margin: 80px 155px 50px;
+}
+
+.whitening h4{
+    font-size: 48px;
+    margin-bottom: 5px;
+    font-weight:900;
+}
+
+.whitening p{
+    margin-top: 0;
+    font-size: 20px;
+    color: gray;
+}
+
+.two{
+    margin-top: 0;
+}
+
+.tablets{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 30px;
 }
