@@ -179,7 +179,6 @@ main p{
     margin-top: 50px;
     margin-left: 100px;
     width: 32%;
-    width: 32%;
     height: 500px;
     /* border-radius: 10px; */
     overflow: hidden;
@@ -469,6 +468,12 @@ hr{
 
 @media only screen and (max-width: 500px) {
 
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
     header {
     display: flex;
     justify-content: space-between;
@@ -549,6 +554,170 @@ hr{
         width: 450px;
     }
     main p{
-        font-size: 40px;
+        font-size: 50px;
     }
+
+    main{
+        width: 100%;
+        background-position: right;
+    }
+
+    .products{
+        display: block;
+    }
+
+    .products img{
+        width: 220px;
+        height: 240px;
+    }
+
+    .products h5{
+        text-align: left;
+        font-size: 18px;
+    }
+
+    .shop{
+        margin-bottom: 30px;
+        margin-top: 8px;
+    }
+
+    .container{
+        margin-left: 45px;
+    }
+
+    .tablets h1{
+        font-size: 50px;
+    }
+
+    .section{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: block;
+        align-content: center;
+        margin-bottom: 20px;
+        gap: 0;
+    }
+
+    .whitening-pic{
+        margin-left: 50px;
+        padding: 0;
+    }
+
+    .whitening-pic img{
+        width: 400px;
+        margin: 0;
+        padding: 0;
+    }
+
+    /*------footer-------*/
+
+    footer {
+        margin: 0;
+        padding: 0;
+        display: block;
+    }
+
+    .footer-container{
+        width: 100%;
+        height: 250px;
+    }
+
+    .footer-col{
+        font-size: 8px;
+    }
+
+    .footer-col ul li a{
+        font-size: 13px;
+    }
+
+    .privacy{
+        display: block;
+    }
+
+    .fo-pic img{
+        width: 40px;
+    }
+
+    hr{
+        margin-left: 40px;
+        width: 80%;
+    }
+
+    footer h3{
+        padding-bottom: 15px;
+    }
+
+    .row{
+        margin-left: 10px;
+    }
+
+    .footer-col{
+        margin-bottom: 0;
+        padding-bottom: 0;
+        margin-left: 25px;
+        height: 100px;
+    }
+
+    .fo-pic{
+        margin: 0;
+        padding: 0;
+        margin-left: 0;
+        /* width: 100px; */
+        display: flex;
+        justify-content: flex-start;
+        margin-right: 100px;
+    }
+
+    .fo-pic img{
+        display: none;
+    }
+
+    .email p{
+        display: none;
+    }
+
+   /* ------------------------ */
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .slider{
+        display: none;
+    }
+
+    .heart h1{
+        font-size: 30px;
+    }
+
+    .heart p{
+        font-size: 13px;
+    }
+
+    .heart{
+        text-align: center;
+        margin-left: 70px;
+    }
+/* 
+
+    .heart{
+        margin-right: 80px;
+        margin-top: 80px;
+        text-align: left;
+        margin-left: 0;
+        align-content: left;
+    }
+    
+    .heart h1{
+        font-size: 50px;
+        font-weight: 600;
+    }
+    
+    .heart p{
+        font-size: 23px;
+        line-height: 1.7;
+    } */
+
+    
 }
