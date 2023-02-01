@@ -459,7 +459,44 @@ hr{
         display: none;
     }
 
+    body{
+        overflow-x: hidden;
+    }
+
     .email p{
         display: none;
     }
+
+    /*-----------------*/
+
+    h2{
+        font-size: 25px;
+    }
+
+    .categories-nav li{
+        font-size: 16px;
+    }
+
+    .oral-care, .personal-care, .bundles, .gift-sets{
+        display: block;
+    }
+
+    .oral-care img{
+
+        align-items: center;
+        height: 300px;
+    }
+
+    .products img{
+        width: 250px;
+    }
+
+    .products{
+        width: 300px;
+    }
+
+    .products:hover{
+        width: 300px;
+    }
+
 }
