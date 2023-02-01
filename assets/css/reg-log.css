@@ -326,6 +326,18 @@ hr{
         margin: 0;
         padding: 0;
     }
+    /* ------header------- */
+
+    .content-box {
+        width: 80%;
+        height: auto;
+    }
+
+    .cred-input {
+        font-size: 14px;
+        height: 40px;
+        padding: 3px;
+    }
 
     /*------footer-------*/
 
