@@ -610,6 +610,8 @@ hr{
         padding: 0;
     }
 
+    /*------footer-------*/
+
     footer {
         margin: 0;
         padding: 0;
@@ -674,6 +676,8 @@ hr{
     .email p{
         display: none;
     }
+
+   /* ------------------------ */
 
     body{
         overflow-x: hidden;
