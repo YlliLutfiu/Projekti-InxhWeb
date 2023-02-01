@@ -479,4 +479,121 @@ hr{
     .email p{
         display: none;
     }
+
+    /*----------------*/
+
+    main{
+        width: 100%;
+        background-position: right;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .main-text h1{
+        font-size: 40px;
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    .main-text p{
+        font-size: 18px;
+        text-align: left;
+    }
+
+    .vegan{
+        width: 400px;
+        text-align: center;
+        margin-left: 40px;
+    }
+
+    .vegan p{
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    #ingredients{
+        display: block;
+        margin-left: 30px;
+    }
+
+    .first-ing{
+        display: block;
+        width: 400px;
+    }
+
+    .list{
+        margin-bottom: 25px;
+    }
+
+    .second-ing{
+        display: block;
+        width: 400px;
+    }
+
+    .third-ing{
+        display: block;
+        width: 400px;
+        margin-left: 10px;
+    }
+
+    .defense h1{
+        font-size: 30px;
+    }
+
+    .earth{
+        display: block;
+        margin-left: 60px;
+    }
+
+    .earth-txt h1{
+        font-size: 30px;
+    }
+
+    .earth-txt p{
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .earth-pic img{
+        width: 95%;
+        height: 380px;
+        margin-left: 0;
+    }
+
+    .smiles{
+        display: block;
+        margin-left: 60px;
+        width: 80%;
+    }
+
+    .smiles-pic img{
+        width: 95%;
+        height: 380px;
+    }
+
+    .smiles h1{
+        font-size: 30px;
+    }
+
+    .smiles p{
+        font-size: 14px;
+    }
+
+    .location{
+        display: block;
+        width: 80%;
+    }
+
+    .iframe{
+        width: 100%;
+    }
+
+
+
+
+
+
+
 }

@@ -340,6 +340,10 @@ hr{
         height: auto;
     }
 
+    body{
+        overflow-x: hidden;
+    }
+
     /*------footer------*/
     
     footer {
