@@ -411,3 +411,174 @@ hr{
         display: none;
     }
 }
+
+@media only screen and (max-width: 768px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    .menu {
+    display: block;
+    }
+    
+    nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 1em;
+    }
+
+    #home ul {
+        width: auto;
+    }
+
+    header svg {
+    width: 2.5em;
+    cursor: pointer;
+    }
+
+    nav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 50%;
+    z-index: 999;
+    transform: translateX(180%);
+    }
+
+    nav li, h2 {
+        margin-top: 0px;
+    }
+
+
+    nav ul {
+    text-align: center;
+    color: black;
+    padding: .75em 2em;
+    display: block;
+    }
+
+    nav li {
+        margin: 20px;
+    }
+
+    .close {
+    margin: 0 auto;
+    display: block;
+    width: 2.5em;
+    }
+
+    h2 {
+        text-align: center;
+        width: auto;
+    }
+
+    .open-nav {
+    background-color: white;
+    transform: translateX(0);
+    }
+
+    #log {
+        position: relative;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* --------------------------------------------- */
+
+
+    /*------footer-------*/
+
+    footer {
+        margin: 0;
+        padding: 0;
+        display: block;
+    }
+
+    .footer-container{
+        width: 100%;
+        height: 250px;
+    }
+
+    .footer-col{
+        font-size: 8px;
+    }
+
+    .footer-col ul li a{
+        font-size: 15px;
+    }
+
+    .privacy{
+        display: block;
+    }
+
+    .fo-pic img{
+        width: 50px;
+        display: block;
+        }
+
+    hr{
+        margin-left: 40px;
+        width: 80%;
+    }
+
+    footer h3{
+        padding-bottom: 15px;
+    }
+
+    .row{
+        margin-left: 10px;
+    }
+
+    .footer-col{
+        margin-bottom: 0;
+        padding-bottom: 0;
+        margin-left: 25px;
+        height: 100px;
+    }
+
+    .fo-pic{
+        margin: 0;
+        padding: 0;
+        margin-left: 0;
+        /* width: 100px; */
+        display: flex;
+        justify-content: flex-start;
+        margin-right: 100px;
+    }
+
+    .fo-pic img{
+        display: none;
+    }
+
+    .email p{
+        display: none;
+    }
+
+    /*----------------------*/
+
+    body{
+        overflow-x: hidden;
+    }
+
+    section {
+        display: block;
+    }
+
+    .contact-txt {
+        height: auto;
+    }
+
+    .inputs {
+        height: auto;
+    }
+}
