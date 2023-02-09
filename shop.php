@@ -16,7 +16,7 @@
                 </svg>
                 <ul>
                     <li><a href="homepage.html">Home</a></li>
-                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="shop.php">Shop</a></li>
                     <li><a href="aboutus.html">About Us</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
@@ -47,52 +47,36 @@
                 </ul>
             </div>
         </section>
-        <section class="porducts-field">
+        <section class="products-field">
             <div class="orientation" id="oral-care-name"></div>
             <p class="category-name">Oral Care</p>
-            <div class="oral-care categories">
-                <div class="products" id="toothpaste">
-                    <img src="assets/images/oral-c1.jpg" alt="">
-                    <p class="prod-name">Toothpaste Bits</p>
-                    <p class="prod-desc">Fresh Mint with Fluoride</p>
-                    <p class="price">$32</p>
-                </div>
+            <div class="oral-care categories" id="toothpaste">
+
+                <?php include('server/get_products.php'); ?>
+
+                <?php while($row = $products_oral_care->fetch_assoc()) { ?>
+
+
                 <div class="products">
-                    <img src="assets/images/oral-c2.jpg" alt="">
-                    <p class="prod-name">Whitening Gel</p>
-                    <p class="prod-desc">Teeth Whitening Kit</p>
-                    <p class="price">$20</p>
+                    <img src="assets/images/<?php echo $row['product_image']; ?>" alt="">
+                    <p class="prod-name"><?php echo $row['product_name']; ?></p>
+                    <p class="prod-desc"><?php echo $row['product_description_short']; ?></p>
+                    <p class="price">$<?php echo $row['product_price']; ?></p>
                 </div>
-                <div class="products">
-                    <img src="assets/images/oral-c3.jpg" alt="">
-                    <p class="prod-name">Mouthwash Bits</p>
-                    <p class="prod-desc">Fresh Mint</p>
-                    <p class="price">$20</p>
-                </div>
-                <div class="products">
-                    <img src="assets/images/oral-c4.jpg" alt="">
-                    <p class="prod-name">Bamboo Toothbrush</p>
-                    <p class="prod-desc">Toothbrush 2-Pack</p>
-                    <p class="price">$12</p>
-                </div>
-                <div class="products">
-                    <img src="assets/images/oral-c5.jpg" alt="">
-                    <p class="prod-name">Dental Floss</p>
-                    <p class="prod-desc">Floss Two-Pack</p>
-                    <p class="price">$12</p>
-                </div>
-            </div>
+
+
+            <?php } ?>
 
             <div class="orientation" id="personal-care-name"></div>
             <p class="category-name">Personal Care</p>
-            <div class="personal-care categories">
+            <div class="personal-care categories" id="balm">
                 <div class="products">
                     <img src="assets/images/personal-c1.jpg" alt="">
                     <p class="prod-name">Deodorant</p>
                     <p class="prod-desc">Neroli</p>
                     <p class="price">$32</p>
                 </div>
-                <div class="products" id="balm">
+                <div class="products">
                     <img src="assets/images/personal-c2.jpg" alt="">
                     <p class="prod-name">Body Balm</p>
                     <p class="prod-desc">Solid Moisturizer</p>
@@ -191,10 +175,10 @@
                     <div class="footer-col">
                         <h3>Shop</h3>
                         <ul>
-                            <li><a href="shop.html#oral-care-name">Oral Care</a></li><br><br>
-                            <li><a href="shop.html#personal-care-name">Personal Care</a></li><br><br>
-                            <li><a href="shop.html#bundles-name">Bundles</a></li><br><br>
-                            <li><a href="shop.html#gift-sets-name">Gift Sets</a></li><br><br>
+                            <li><a href="shop.php#oral-care-name">Oral Care</a></li><br><br>
+                            <li><a href="shop.php#personal-care-name">Personal Care</a></li><br><br>
+                            <li><a href="shop.php#bundles-name">Bundles</a></li><br><br>
+                            <li><a href="shop.php#gift-sets-name">Gift Sets</a></li><br><br>
                         </ul>
                     </div>
                     <div class="footer-col">
