@@ -19,6 +19,7 @@ header{
     top: 0;
     height: 70px;
     align-items: center;
+    box-shadow: 0 4px 6px 0 rgba(181, 181, 181, 0.2), 0 4px 10px 0 rgba(185, 185, 185, 0.19);
 }
 
 #bite{
