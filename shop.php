@@ -58,7 +58,7 @@
 
 
                 <div class="products">
-                    <img src="assets/images/<?php echo $row['product_image']; ?>" alt="">
+                    <a href="<?php echo "single-product.php?product_Id=". $row['product_Id']; ?>"><img src="assets/images/<?php echo $row['product_image']; ?>" alt=""></a>
                     <p class="prod-name"><?php echo $row['product_name']; ?></p>
                     <p class="prod-desc"><?php echo $row['product_description_short']; ?></p>
                     <p class="price">$<?php echo $row['product_price']; ?></p>
@@ -78,7 +78,7 @@
 
 
             <div class="products">
-                <img src="assets/images/<?php echo $row['product_image']; ?>" alt="">
+                <a href="<?php echo "single-product.php?product_Id=". $row['product_Id']; ?>"><img src="assets/images/<?php echo $row['product_image']; ?>" alt=""></a>
                 <p class="prod-name"><?php echo $row['product_name']; ?></p>
                 <p class="prod-desc"><?php echo $row['product_description_short']; ?></p>
                 <p class="price">$<?php echo $row['product_price']; ?></p>
@@ -129,7 +129,7 @@
 
 
             <div class="products">
-                <img src="assets/images/<?php echo $row['product_image']; ?>" alt="">
+                <a href="<?php echo "single-product.php?product_Id=". $row['product_Id']; ?>"><img src="assets/images/<?php echo $row['product_image']; ?>" alt=""></a>
                 <p class="prod-name"><?php echo $row['product_name']; ?></p>
                 <p class="prod-desc"><?php echo $row['product_description_short']; ?></p>
                 <p class="price">$<?php echo $row['product_price']; ?></p>
@@ -169,7 +169,7 @@
 
 
             <div class="products">
-                <img src="assets/images/<?php echo $row['product_image']; ?>" alt="">
+                <a href="<?php echo "single-product.php?product_Id=". $row['product_Id']; ?>"><img src="assets/images/<?php echo $row['product_image']; ?>" alt=""></a>
                 <p class="prod-name"><?php echo $row['product_name']; ?></p>
                 <p class="prod-desc"><?php echo $row['product_description_short']; ?></p>
                 <p class="price">$<?php echo $row['product_price']; ?></p>
