@@ -150,9 +150,9 @@ ul a li{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    flex-basis: 33.33333%;
+    /* flex-basis: 33.33333%; */
     gap: 15px;
-    width: 75%;
+    /* width: 75%; */
 }
 
 .products {
@@ -168,7 +168,7 @@ ul a li{
     height: 470px;
 }
 
-img{
+.categories img{
     width: 100%;
     height: 80%;
     border-radius: 2%;

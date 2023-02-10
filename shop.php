@@ -67,10 +67,27 @@
 
             <?php } ?>
 
+
             <div class="orientation" id="personal-care-name"></div>
             <p class="category-name">Personal Care</p>
             <div class="personal-care categories" id="balm">
-                <div class="products">
+
+            <?php include('server/get_products.php'); ?>
+
+            <?php while($row = $products_personal_care->fetch_assoc()) { ?>
+
+
+            <div class="products">
+                <img src="assets/images/<?php echo $row['product_image']; ?>" alt="">
+                <p class="prod-name"><?php echo $row['product_name']; ?></p>
+                <p class="prod-desc"><?php echo $row['product_description_short']; ?></p>
+                <p class="price">$<?php echo $row['product_price']; ?></p>
+            </div>
+
+
+            <?php } ?>
+
+                <!-- <div class="products">
                     <img src="assets/images/personal-c1.jpg" alt="">
                     <p class="prod-name">Deodorant</p>
                     <p class="prod-desc">Neroli</p>
@@ -100,12 +117,29 @@
                     <p class="prod-desc"></p>
                     <p class="price">$6</p>
                 </div>
-            </div>
+            </div> -->
 
             <div class="orientation" id="bundles-name"></div>
             <p class="category-name">Bundles</p>
             <div class="bundles categories">
-                <div class="products">
+
+            <?php include('server/get_products.php'); ?>
+
+            <?php while($row = $products_bundles->fetch_assoc()) { ?>
+
+
+            <div class="products">
+                <img src="assets/images/<?php echo $row['product_image']; ?>" alt="">
+                <p class="prod-name"><?php echo $row['product_name']; ?></p>
+                <p class="prod-desc"><?php echo $row['product_description_short']; ?></p>
+                <p class="price">$<?php echo $row['product_price']; ?></p>
+            </div>
+
+            <?php } ?>
+
+
+
+                <!-- <div class="products">
                     <img src="assets/images/bundle-1.jpg" alt="">
                     <p class="prod-name">Daily Habits Kit</p>
                     <p class="prod-desc">5-Piece Oral Care Kit</p>
@@ -122,13 +156,28 @@
                     <p class="prod-name">The Starter Kit</p>
                     <p class="prod-desc">Holiday Gift Set</p>
                     <p class="price">$40</p>
-                </div>
+                </div> -->
             </div>
 
             <div class="orientation" id="gift-sets-name"></div>
             <p class="category-name">Gift Sets</p>
             <div class="gift-sets categories">
-                <div class="products">
+
+            <?php include('server/get_products.php'); ?>
+
+            <?php while($row = $products_gift_sets->fetch_assoc()) { ?>
+
+
+            <div class="products">
+                <img src="assets/images/<?php echo $row['product_image']; ?>" alt="">
+                <p class="prod-name"><?php echo $row['product_name']; ?></p>
+                <p class="prod-desc"><?php echo $row['product_description_short']; ?></p>
+                <p class="price">$<?php echo $row['product_price']; ?></p>
+            </div>
+
+            <?php } ?>
+
+                <!-- <div class="products">
                     <img src="assets/images/gift-1.jpg" alt="">
                     <p class="prod-name">Best Sellers</p>
                     <p class="prod-desc">Holiday Gift Set</p>
@@ -163,7 +212,7 @@
                     <p class="prod-name">Gift Bite</p>
                     <p class="prod-desc">Digital Gift Card</p>
                     <p class="price">$25</p>
-                </div>
+                </div> -->
             </div>
         </section>
     </main>
