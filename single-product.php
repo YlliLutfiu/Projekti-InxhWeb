@@ -1,3 +1,27 @@
+<?php
+
+    include('server/connection.php');
+
+    if(isset($_GET['product_Id'])){
+
+    $product_id = $_GET['product_Id'];
+
+    $stmt = $conn->prepare("SELECT * FROM products WHERE product_Id = ? ");
+    $stmt->bind_param("i",$product_id);
+
+    $stmt->execute();
+
+    $product = $stmt->get_result();
+
+
+} else {
+    header('location: shop.php');
+}
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,25 +56,24 @@
 
 
     <section class="product-container">
+
+        <?php while($row = $product->fetch_assoc()) { ?>
+
         <div class="s-p-container">
             <div class="s-p-img">
-                <img src="assets/images/oral-c1.jpg" alt="">
+                <img src="assets/images/<?php echo $row['product_image']; ?>" alt="">
             </div>
             <div class="s-p-desc">
-                <h3>Toothpaste Bits</h3>
-                <p>Fresh Mint with Fluoride <br>- Give your teeth an extra boost with Mint Fluoride, our newest toothpaste bits, now with anticavity protection.<br>
-                    Made with Fluoride <br>
-                    100% Plastic free<br>
-                    Refillable glass jar<br>
-                    Cruelty–Free<br>
-                    100% Vegan<br>
-                    Clean ingredients<br>
-                    Strengthens Teeth<br>
-                    Helps Prevent Cavities</p>
-                <p>$32</p>
+                <h3><?php echo $row['product_name']; ?></h3>
+                <p><?php echo $row['product_description_short']; ?></p>
+                <p> <?php echo $row['product_description_long']; ?></p>
+                <p>$<?php echo $row['product_price']; ?></p>
                 <button>Buy product</button>
             </div>
         </div>
+
+            <?php } ?>
+
     </section>
 
 
