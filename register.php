@@ -34,15 +34,15 @@
 
         <div class="data">
             <p class="reg-txt">Register</p>
-            <form>
-            <input type="text" class="cred-input" id="first-name" placeholder="First Name"> <br><br>
-            <input type="text" class="cred-input" id="last-name" placeholder="Last Name"> <br><br>
-            <input type="email" class="cred-input" id="email" placeholder="Email"> <br><br>
-            <input type="password" class="cred-input" id="password" placeholder="Password"> <br><br>
-            <input type="date" class="cred-input" id="birth-date"> 
+            <form action="<?=$_SERVER['PHP_SELF']?>" method="post">
+            <input type="text" class="cred-input" id="first-name" placeholder="First Name" name="firstname"> <br><br>
+            <input type="text" class="cred-input" id="last-name" placeholder="Last Name" name="lastname"> <br><br>
+            <input type="email" class="cred-input" id="email" placeholder="Email" name="email"> <br><br>
+            <input type="password" class="cred-input" id="password" placeholder="Password" name="password"> <br><br>
             <br><br>
-            <input type="submit" value="Register" class="cred-input" id="submit">
+            <input type="submit" value="Register" class="cred-input" id="submit" name="registerBtn">
             </form>
+            <?php include_once('server/registerController.php') ?>
         </div>
         <a href="shop.php"><p class="return">Return to Store</p></a>
         <p>Already have an account? <a href="login.html">Click here</a> to log in.</p>
