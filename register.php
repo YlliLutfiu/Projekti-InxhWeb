@@ -22,7 +22,7 @@
             </ul>
         </nav>  
         <a href="homepage.html" id="bite"><h2>Bite</h2></a>
-        <a id="log" href="login.html">LogIn/Register</a>
+        <a id="log" href="login.php">LogIn/Register</a>
         <svg class="menu" viewBox="0 0 100 80" width="40" height="40">
             <rect width="100" height="20"></rect>
             <rect y="30" width="100" height="20"></rect>
@@ -45,7 +45,7 @@
             <?php include_once('server/registerController.php') ?>
         </div>
         <a href="shop.php"><p class="return">Return to Store</p></a>
-        <p>Already have an account? <a href="login.html">Click here</a> to log in.</p>
+        <p>Already have an account? <a href="login.php">Click here</a> to log in.</p>
     </div>
 
     <footer>

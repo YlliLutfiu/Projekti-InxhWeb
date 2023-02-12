@@ -1,6 +1,6 @@
 <?php
 
-$conn = mysqli_connect("localhost:3307","root","","bite");
+$conn = mysqli_connect("localhost:3308","root","","bite");
 // Check connection
 if (mysqli_connect_errno())
 {
@@ -11,7 +11,7 @@ if (mysqli_connect_errno())
 <?php 
 
 class DBConnection{
-    private $server="localhost:3307";
+    private $server="localhost:3308";
     private $username="root";
     private $password="";
     private $database="bite";
