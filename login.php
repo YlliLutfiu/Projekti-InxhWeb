@@ -22,7 +22,7 @@
                 </ul>
             </nav>  
             <a href="homepage.html" id="bite"><h2>Bite</h2></a>
-            <a id="log" href="login.html">LogIn/Register</a>
+            <a id="log" href="login.php">LogIn/Register</a>
             <svg class="menu" viewBox="0 0 100 80" width="40" height="40">
                 <rect width="100" height="20"></rect>
                 <rect y="30" width="100" height="20"></rect>
@@ -34,12 +34,39 @@
 
         <div class="data">
             <p class="reg-txt">Log in</p>
-            <form>
-            <input type="email" class="cred-input" id="email" placeholder="Email"> <br><br>
-            <input type="password" class="cred-input" id="password" placeholder="Password"> <br><br>
+            <?php
+            require('server/connection.php');
+            session_start();
+
+            if (isset($_POST['email'])){
+		
+            $email = stripslashes($_REQUEST['email']);
+            $email = mysqli_real_escape_string($conn,$email);
+            $password = stripslashes($_REQUEST['password']);
+            $password = mysqli_real_escape_string($conn,$password);
+		
+            $query = "SELECT * FROM `user` WHERE email='$email' and password='$password'"; 
+            $result = mysqli_query($conn,$query) or die(mysql_error());
+            $rows = mysqli_num_rows($result);
+            if($rows==1){
+                $_SESSION['email'] = $email;
+                    header("Location: homepage.html");
+                }else{
+                    echo "<script> alert('Email or password are incorrect')</script><br />
+                    <a href='login.php'>Click here to try again</a><br /> <br />";
+                }
+            }else{
+            ?>
+
+            <form method="post">
+            <input type="email" class="cred-input" id="email" placeholder="Email" name="email"> <br><br>
+            <input type="password" class="cred-input" id="password" placeholder="Password" name="password"> <br><br>
             <br><br>
             <input type="submit" value="Log in" class="cred-input" id="submit">
             </form>
+
+            <?php } ?>
+
             <p>Don't have an account? <a href="register.php">Click here</a> to register.</p>
         </div>
     </div>
