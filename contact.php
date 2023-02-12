@@ -18,7 +18,7 @@
                 <li><a href="homepage.html">Home</a></li>
                 <li><a href="shop.php">Shop</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="contact.php">Contact Us</a></li>
             </ul>
         </nav>  
         <a href="homepage.html" id="bite"><h2>Bite</h2></a>
@@ -37,13 +37,31 @@
         </div>
         <div class="inputs">
             <p class="message-p">Write your Message here</p>
-            <form action="">
-                <input type="text" class="msg-input" id="name" placeholder="Enter your First and Last Name"> <br>
-                <input type="email" class="msg-input" id="email" placeholder="Enter your Email"> <br>
-                <input type="text" class="msg-input" id="subject" placeholder="Subject"> <br>
-                <textarea cols="60" rows="10" id="message" placeholder="Your Message..."></textarea>
-                <input type="submit" value="Send" id="send">
+            <form action="" method="post" autocomplete="off">
+                <input type="text" class="msg-input" id="name" placeholder="Enter your First and Last Name" name="name" required> <br>
+                <input type="email" class="msg-input" id="email" placeholder="Enter your Email" name="email" required> <br>
+                <input type="text" class="msg-input" id="subject" placeholder="Subject" name="subject" required> <br>
+                <textarea cols="60" rows="10" id="message" placeholder="Your Message..." name="message" required></textarea>
+                <input type="submit" value="Send" id="send" name="send">
             </form>
+            <?php
+            require 'server/connection.php';
+
+            if(isset($_POST["send"])){
+            $name = $_POST['name'];
+            $email = $_POST['email'];
+            $subject = $_POST["subject"];
+            $message = $_POST["message"];
+            $id = rand(0,127);
+
+            $query = "INSERT INTO contact VALUES ('', '$name', '$email', '$subject', '$message')";
+            mysqli_query($conn, $query);
+            echo "
+            <script>alert('Message sent successfully');</script>
+            ";
+            }
+
+            ?>
         </div>
     </section>
 

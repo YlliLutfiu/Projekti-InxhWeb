@@ -18,7 +18,7 @@
                 <li><a href="homepage.html">Home</a></li>
                 <li><a href="shop.php">Shop</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="contact.php">Contact Us</a></li>
             </ul>
         </nav>  
         <a href="homepage.html" id="bite"><h2>Bite</h2></a>
