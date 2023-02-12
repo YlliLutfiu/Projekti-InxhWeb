@@ -1,5 +1,5 @@
 <?php 
-include 'connection.php';
+include 'database-connection.php';
 
 class UserRepository{
     private $connection;
@@ -22,7 +22,7 @@ class UserRepository{
         
         $statement = $conn->prepare($sql);
         $statement->execute([$id,$name,$surname,$email,$password]);
-        echo "<script> alert('User has been inserted successfuly!') </script>";
+        echo "<script> alert('You are registered now!') </script>";
     }
 
     function getAllUsers(){
